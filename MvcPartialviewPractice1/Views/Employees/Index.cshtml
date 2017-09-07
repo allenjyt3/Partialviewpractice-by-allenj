@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MvcPartialviewPractice1.Models.tbl_Employees>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@*@{ Html.RenderPartial("IndexPart", Model);}*@
+@*@{MvcHtmlString res = @Html.Partial("IndexPart", Model);
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append(res + "<h2>Allen</h2>");
+
+}*@
+@*@Html.Raw(sb.ToString())*@
+
+@{Html.RenderAction("IndexPart");
+}
