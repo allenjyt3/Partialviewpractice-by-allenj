@@ -11,7 +11,7 @@ namespace MvcPartialviewPractice1.Controllers
     public class EmployeesController : Controller
     {
         // GET: Employees
-        public ActionResult Index()
+        public ActionResult Index()//index is a view
         {
             SchoolEntities db = new SchoolEntities();
             return View(db.tbl_Employees);
